@@ -89,7 +89,7 @@ remounted read-only and the overlays go on top of the real directories.
 ## Layout
 
 ```
-overlay-module-template/
+overlay-module-magisk/
 ├── build.sh                ← builds out/<id>-<version>.zip
 ├── tests/test_ovl.sh       ← engine test on a PC (no phone needed)
 └── module/                 ← the contents of the zip
