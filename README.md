@@ -94,7 +94,6 @@ overlay.
 overlay-module-template/
 ├── build.sh                ← собирает out/<id>-<version>.zip
 ├── tests/test_ovl.sh       ← проверка движка на ПК (без телефона)
-├── docs/MAGISK_PROPOSAL.md ← как сообщить о проблеме разработчикам Magisk
 └── module/                 ← это и есть содержимое zip
     ├── META-INF/...        стандартный установщик Magisk, не трогать
     ├── module.prop         id, имя, версия — ОБЯЗАТЕЛЬНО поменять
