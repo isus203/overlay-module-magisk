@@ -91,7 +91,7 @@ overlay.
 ## Структура
 
 ```
-overlay-module-template/
+overlay-module-magisk/
 ├── build.sh                ← собирает out/<id>-<version>.zip
 ├── tests/test_ovl.sh       ← проверка движка на ПК (без телефона)
 └── module/                 ← это и есть содержимое zip
@@ -115,7 +115,7 @@ overlay-module-template/
 ### Шаг 1. Скопируйте шаблон
 
 ```sh
-cp -r overlay-module-template my-module
+cp -r overlay-module-magisk my-module
 cd my-module
 ```
 
