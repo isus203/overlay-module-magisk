@@ -1,6 +1,7 @@
 # Magisk module template with overlayfs
 
 [Русский](README.md) · **English**
+
 A clean starter module: put your files into `module/ovl/`, build the zip with
 one command, and the files appear in `/system`, `/vendor`, `/product` and so
 on. No Magic Mount, no thousands of extra mounts, no bootloop caused by them.
@@ -91,7 +92,6 @@ remounted read-only and the overlays go on top of the real directories.
 overlay-module-template/
 ├── build.sh                ← builds out/<id>-<version>.zip
 ├── tests/test_ovl.sh       ← engine test on a PC (no phone needed)
-├── docs/MAGISK_PROPOSAL.md ← how to report the problem upstream
 └── module/                 ← the contents of the zip
     ├── META-INF/...        standard Magisk installer, do not touch
     ├── module.prop         id, name, version: MUST be changed
@@ -113,7 +113,7 @@ overlay-module-template/
 ### Step 1. Copy the template
 
 ```sh
-cp -r overlay-module-template my-module
+cp -r overlay-module-magisk my-module
 cd my-module
 ```
 
