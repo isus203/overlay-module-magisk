@@ -1,0 +1,8 @@
+# ovl.img is attached to a loop device; the loop worker thread reads and
+# writes it as the kernel domain. ovl.sh labels the image adb_data_file.
+allow kernel adb_data_file file { read write open getattr }
+
+# Let the engine label layer files inside the ext4 image. Every label a
+# layer file gets (inherited or from OVL_LABELS in ovl.conf) must be listed
+# here, otherwise chcon fails with "Permission denied".
+allow { system_file system_lib_file vendor_file vendor_configs_file same_process_hal_file vendor_app_file } labeledfs filesystem associate

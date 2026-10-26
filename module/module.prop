@@ -1,0 +1,6 @@
+id=overlay_template
+name=Overlay Module Template
+version=v1.0
+versionCode=1
+author=Your Name
+description=Template: files in ovl/ are added with one overlayfs mount per directory instead of Magic Mount (Magisk, KernelSU, APatch).
